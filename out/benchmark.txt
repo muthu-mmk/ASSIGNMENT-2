@@ -1,0 +1,27 @@
+n = 256, tile = 32, best of 3 runs
+
+variant                  time (s)   speedup    max error
+baseline (i-j-k)           0.0083     1.00x     0.00e+00
+interchange (i-k-j)        0.0026     3.20x     0.00e+00
+tiled                      0.0029     2.87x     0.00e+00
+unrolled x4                0.0058     1.43x     0.00e+00
+tiled + unrolled           0.0059     1.41x     0.00e+00
+
+n = 512, tile = 32, best of 3 runs
+
+variant                  time (s)   speedup    max error
+baseline (i-j-k)           0.2464     1.00x     0.00e+00
+interchange (i-k-j)        0.0220    11.23x     0.00e+00
+tiled                      0.0237    10.39x     0.00e+00
+unrolled x4                0.0462     5.33x     0.00e+00
+tiled + unrolled           0.0470     5.24x     0.00e+00
+
+n = 1024, tile = 32, best of 3 runs
+
+variant                  time (s)   speedup    max error
+baseline (i-j-k)           2.2715     1.00x     0.00e+00
+interchange (i-k-j)        0.2049    11.09x     0.00e+00
+tiled                      0.1942    11.70x     0.00e+00
+unrolled x4                0.4077     5.57x     0.00e+00
+tiled + unrolled           0.3879     5.86x     0.00e+00
+
